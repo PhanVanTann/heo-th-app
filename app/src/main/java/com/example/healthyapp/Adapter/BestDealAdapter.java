@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
+//import com.bumptech.glide.Glide;
 import com.example.healthyapp.Activity.DetailActivity;
 import com.example.healthyapp.Domain.ItemsDomain;
 import com.example.healthyapp.R;
@@ -43,9 +43,9 @@ public class BestDealAdapter extends RecyclerView.Adapter<BestDealAdapter.viewho
          @SuppressLint("DiscouragedApi") int drawableResourceId=holder.itemView.getResources()
                 .getIdentifier(items.get(position).getImgPath(),"drawable",holder.itemView.getContext().getPackageCodePath());
 
-        Glide.with(context)
-                .load(drawableResourceId)
-                .into(holder.pic);
+//        Glide.with(context)
+//                .load(drawableResourceId)
+//                .into(holder.pic);
 
         holder.itemView.setOnClickListener(v -> {
             Intent intent=new Intent(context, DetailActivity.class);

@@ -11,7 +11,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
 import com.example.healthyapp.Domain.CategoryDomain;
 import com.example.healthyapp.R;
 
@@ -38,9 +37,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewho
         holder.titleTxT.setText(items.get(position).getTitle());
          @SuppressLint("DiscouragedApi") int drawableResourceId=holder.itemView.getResources()
                 .getIdentifier( items.get(position).getImgPath(),"drawable",holder.itemView.getContext().getPackageName());
-        Glide.with(context)
-                .load(drawableResourceId)
-                .into(holder.pic);
+//        Glide.with(context)
+//                .load(drawableResourceId)
+//                .into(holder.pic);
     }
 
     @Override
